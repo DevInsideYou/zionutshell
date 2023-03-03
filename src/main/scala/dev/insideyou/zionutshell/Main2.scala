@@ -142,6 +142,7 @@ object Main2 extends scala.App:
 
   lazy val program =
     controller.run.provideLayer(DependencyGraph.env)
+
 // controller.run.provideLayer(DependencyGraph.env ++ FakeBusinessLogic.live)
 // controller.run.provideLayer(FancyConsole.live ++ DependencyGraph.partial)
 // controller.run.provideLayer(DependencyGraph.partial ++ FancyConsole.live)

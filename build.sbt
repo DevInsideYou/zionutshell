@@ -1,7 +1,7 @@
 import Dependencies._
 
 ThisBuild / organization := "dev.insideyou"
-ThisBuild / scalaVersion := "3.0.0"
+ThisBuild / scalaVersion := "3.2.2"
 
 ThisBuild / scalacOptions ++=
   Seq(
@@ -34,10 +34,10 @@ lazy val commonSettings = Seq(
 
 lazy val dependencies = Seq(
   libraryDependencies ++= Seq(
-    "dev.zio" %% "zio" % "1.0.9"
+    dev.zio.zio
   ),
   libraryDependencies ++= Seq(
     org.scalatest.scalatest,
-    org.scalatestplus.`scalacheck-1-15`,
+    org.scalatestplus.`scalacheck-1-17`,
   ).map(_ % Test),
 )

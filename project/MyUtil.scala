@@ -3,7 +3,7 @@ import scala.sys.process._
 
 import sbt._
 
-object Util {
+object MyUtil {
   def styled(in: Any): String =
     scala.Console.CYAN + in + scala.Console.RESET
 
